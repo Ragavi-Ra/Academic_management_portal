@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+    <meta charset="UTF-8">
+    <title>Error Page</title>
+    <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+          rel="stylesheet">
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="/assets/css/style-starter.css">
+
+</head>
+<body>
+<div th:replace="~{header :: header}">...</div>
+
+<section class="page_404">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 ">
+                <div class="col-sm-10 col-sm-offset-1  text-center">
+                    <div class="four_zero_four_bg_error" style="margin-top: 150px;">
+                        <h1 class="text-center">Aiyoo aunty pudingiruchu!!!!</h1>
+                    </div>
+                    <img src="/assets/images/pageerror.gif" width="800" height="600">
+                    <div class="contant_box_404">
+                        <a th:href="@{/home}"
+                           class="link_404 btn btn-style btn-style-3" style="margin-top: 100px;">Go to
+                            Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div th:replace="~{footer :: footer}">...</div>
+
+</body>
+</html>
